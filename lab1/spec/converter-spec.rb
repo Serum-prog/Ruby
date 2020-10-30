@@ -11,11 +11,11 @@ RSpec.describe Converter do
 		end
 		
 		context 'Convert from K to C' do 
-			et { expect(Converter.new.convert(35, 'K' to 'C').round(2)).to eq(-238.15) }
+			it { expect(Converter.new.convert(35, 'K', 'C').round(2)).to eq(-238.15) }
 		end
 		
 		context 'Convert from K to F' do 
-			it { expect(Converter.new.convert(35, 'K' to 'F')).to eq(-396.67) }
+			it { expect(Converter.new.convert(35, 'K', 'F')).to eq(-396.67) }
 		end 
 		
 		context 'Convert from F to C' do 
